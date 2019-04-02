@@ -52,34 +52,34 @@ The infix expression ((15 ÷ (7 − (1 + 1))) × 3) − (2 + (1 + 1)) can be wri
 
     Evaluating this postfix expression with the above left-to-right algorithm yields (red items are the stack contents, bold is the current token):
 
-15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
-15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
-15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
-15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
-15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
-15 7     2 − ÷ 3 × 2 1 1 + + − =
-15         5 ÷ 3 × 2 1 1 + + − =
-             3 3 × 2 1 1 + + − =
-             3 3 × 2 1 1 + + − =
-                 9 2 1 1 + + − =
-                 9 2 1 1 + + − =
-                 9 2 1 1 + + − =
-                 9 2 1 1 + + − =
-                 9 2     2 + − =
-                 9         4 − =
-                             5 =
-                             5
-
+		15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+		15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+		15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+		15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+		15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+		15 7     2 − ÷ 3 × 2 1 1 + + − =
+		15         5 ÷ 3 × 2 1 1 + + − =
+		             3 3 × 2 1 1 + + − =
+		             3 3 × 2 1 1 + + − =
+		                 9 2 1 1 + + − =
+		                 9 2 1 1 + + − =
+		                 9 2 1 1 + + − =
+		                 9 2 1 1 + + − =
+		                 9 2     2 + − =
+		                 9         4 − =
+		                             5 =
+		                             5
+		
     Evaluating this postfix expression with the above right-to-left algorithm yields:
 
-15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
-15 7 1 1 + − ÷ 3 × 2     2 + − =
-15 7 1 1 + − ÷ 3 ×         4 − =
-15 7     2 − ÷ 3 ×         4 − =
-15         5 ÷ 3 ×         4 − =
-             3 3 ×         4 − =
-                 9         4 − =
-                             5
+		15 7 1 1 + − ÷ 3 × 2 1 1 + + − =
+		15 7 1 1 + − ÷ 3 × 2     2 + − =
+		15 7 1 1 + − ÷ 3 ×         4 − =
+		15 7     2 − ÷ 3 ×         4 − =
+		15         5 ÷ 3 ×         4 − =
+		             3 3 ×         4 − =
+		                 9         4 − =
+		                             5
 
 The following table shows the state of the operand stack at each stage of the above left-to-right algorithm:
 Token 	Type 	Stack 	Actions
